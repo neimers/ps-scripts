@@ -1,8 +1,9 @@
+# THIS SCRIPT SEARCHES ALL FILES IN A FOLDER (INCLUDING SUB FOLDERS) LOOKING FOR CONTENTS THAT MATCH THE REGULAR EXPRESSION
+# ANY MATCHES ARE WRITTEN TO A CSV FILE!
 
 # Get Directory This Script is In (Assume Will Be Root For Everything Else)
 $invocation = (Get-Variable MyInvocation).Value
 $directorypath = Split-Path $invocation.MyCommand.Path
-#$settingspath = $directorypath + '\settings.xml'
 
 # Output File to Write Matches Into
 $ResultsCSV = "C:\TEMP\output\Results.csv" 

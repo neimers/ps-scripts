@@ -21,15 +21,15 @@ $TextFiles = Get-ChildItem $Directory -Include *.txt*,*.csv*,*.rtf*,*.eml*,*.msg
 
 foreach ($FileSearched in $TextFiles) {   #loop over files in folder
 
-    #    $text = [IO.File]::ReadAllText($FileSearched)
+    Write-Host "Searching: " $FileSearched
+
     $file = New-Object System.IO.StreamReader ($FileSearched)  # Input Stream
 
     while ($text = $file.ReadLine()) {      # read line by line
         foreach ($match in ([regex]$RX).Matches($text)) {   
-               # write line to output stream
                $file2.WriteLine("{0},{1}",$match.Value, $FileSearched.fullname )  
-        } #foreach $match
-    }#while $file
+        }
+    }
      $file.close();  
-} #foreach  
+}  
 $file2.close()

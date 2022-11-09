@@ -16,8 +16,8 @@ $Replace = "string 2"
 
 $TextFiles = Get-ChildItem $Directory -Include *.txt*,*.csv*,*.rtf*,*.eml*,*.msg*,*.dat*,*.ini*,*.mht* -Recurse
 
- $file2 =  new-object System.IO.StreamWriter($ResultsCSV) #output Stream
- $file2.WriteLine('Matches,File Path') # write header
+$file2 =  new-object System.IO.StreamWriter($ResultsCSV) #output Stream
+$file2.WriteLine('Matches,File Path') # write header
 
 foreach ($FileSearched in $TextFiles) {   #loop over files in folder
     

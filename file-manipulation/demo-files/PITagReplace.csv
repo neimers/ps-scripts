@@ -1,0 +1,5 @@
+OldValue,NewValue
+HAW.PI.BPM_ClO2 lbs Prev Day Inventory Change_Equivalent Chlorate lbs,HAW.HISTCALC01.BPM_ClO2 lbs Prev Day Inventory Change_Equivalent Chlorate lbs
+HAW.PI.BPM_Weak Liquor Storage Tanks Total lbs Solids Daily Change,HAW.HISTCALC01.BPM_Weak Liquor Storage Tanks Total lbs Solids Daily Change
+HAW.PI.BPM_Chlorate lb_per_ton ClO2 produced_Erco Theoretical Rqd,HAW.HISTCALC01.BPM_Chlorate lb_per_ton ClO2 produced_Erco Theoretical Rqd
+HAW.PI.BPM_ClO2 Gen  Sulfuric Consumption Bleach Plants_Prev Day,HAW.HISTCALC01.BPM_ClO2 Gen  Sulfuric Consumption Bleach Plants_Prev Day

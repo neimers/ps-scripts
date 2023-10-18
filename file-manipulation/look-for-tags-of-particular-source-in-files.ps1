@@ -13,7 +13,7 @@ $TagListCSV = "E:\TEMP\Results_taglist.csv"
 $Directory = "\\HAWParcServer\Capstone\dataparc\Hawesville\Users\Capstone\neimers"
 
 # Regex Expression to Match Against
-$RX = "[>\""]([Hh][Aa][Ww]\.[Pp][Ii]\..*)[<\""]"
+$RX = "[>\""]([Hh][Aa][Ww]\.[Pp][Ii]\..*?)[<\""]"
 
 $d = [System.Collections.Generic.Dictionary[String,String]]::new()
 

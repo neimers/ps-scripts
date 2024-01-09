@@ -1,4 +1,4 @@
-# THIS SCRIPT SEARCHES FOR THE REGEX (WHICH IS LOOKING FOR TAGS OF A PARTICULAR SOURCE) IN ALL FILES RECURSIVELY
+# THIS SCRIPT SEARCHES FOR THE REGEX (WHICH IS LOOKING FOR TAGS OF A PARTICULAR SOURCE) IN ALL FILE RECURSIVELY
 # IT LOGS THE MATCHES TO FILE, AND LOGS THE UNIQUE MATCHES TO A DIFFERENT FILE
 
 # Get Directory This Script is In (Assume Will Be Root For Everything Else)
@@ -30,28 +30,26 @@ foreach ($FileSearched in $TextFiles) {   #loop over files in folder
 
     Write-Host "Searching: " $FileSearched
 
-    $file = New-Object System.IO.StreamReader ($FileSearched)  # Input Stream
+    $file = [System.IO.File]::ReadAllLines($FileSearched)  # Input Stream
 
-    while ($text = $file.ReadLine()) {      # read line by line
-        foreach ($match in ([regex]$RX).Matches($text)) {
-            $s = $match.Groups[1].Value.ToUpperInvariant()
+    foreach ($match in ([regex]$RX).Matches($file)) {
+        $s = $match.Groups[1].Value.ToUpperInvariant()
 
-            $s = $s.Replace("/PLOT", "")
+        $s = $s.Replace("/PLOT", "")
 
-            $file2.WriteLine("{0},{1}",$s, $FileSearched.FullName )
-            
-            if(-not $d.ContainsKey($s))
-            {
-                $d.Add($s, $FileSearched.FullName)
-            }
-            else
-            {
-                $d[$s] = $d[$s] + "," + $FileSearched.FullName
-            }
+        $file2.WriteLine("{0},{1}",$s, $FileSearched.FullName )
+        
+        if(-not $d.ContainsKey($s))
+        {
+            $d.Add($s, $FileSearched.FullName)
+        }
+        else
+        {
+            $d[$s] = $d[$s] + "," + $FileSearched.FullName
         }
     }
-    $file.close();  
-}  
+} 
+
 $file2.close();
 
 $file_taglist =  new-object System.IO.StreamWriter($TagListCSV) #output Stream

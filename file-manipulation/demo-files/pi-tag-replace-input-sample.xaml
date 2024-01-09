@@ -1,0 +1,38 @@
+<TAG>
+        <UTAG>NEK.PI.A4-RTR-MO1-CN&gt;PC/PLOT</UTAG>
+        <DATASOURCE>0</DATASOURCE>
+      </TAG>
+<TAG>
+<TAG>
+        <UTAG>NEK.PI.A4-RTR-MO1-CN&gt;PC</UTAG>
+        <DATASOURCE>0</DATASOURCE>
+      </TAG>
+<TAG>
+        <UTAG>NEK.PI.A4-RTR-MO1-ACT/PLOT</UTAG>
+        <DATASOURCE>0</DATASOURCE>
+        <DESCRIPTION>RTR Fr 1 Moist Actual</DESCRIPTION>
+        <SHORTDESCRIPTION />
+        <KEY />
+<TAG>
+        <UTAG>NEK.PI.A4-RTR-MO1-ACT/EXPR=IV("NEK.PI.A4-RTR-MO1-ACT")</UTAG>
+        <DATASOURCE>0</DATASOURCE>
+        <DESCRIPTION>RTR Fr 1 Moist Actual</DESCRIPTION>
+        <SHORTDESCRIPTION />
+        <KEY />
+<TAG>
+        <UTAG>NEK.PI.A4-RTR//-MO1-ACT/EXPR=IV("NEK.PI.A4-RTR-MO1-ACT")</UTAG>
+        <DATASOURCE>0</DATASOURCE>
+        <DESCRIPTION>RTR Fr 1 Moist Actual</DESCRIPTION>
+        <SHORTDESCRIPTION />
+        <KEY />
+<parcgwpf:DataAnimation.UTagList>
+          <parcgwpf:UTagInfo Key="UTagInfo2" UTag="NEK.PI.430-FI-118" ElementName="Value1_pbTextEl" ReadSpan="01:00:00" Description="Total filtered water flow" Units="GPM" PeriodType="D" PlotMax="15000" />
+
+# PARCgraphics - UTagInfo, Tag and Tag in Expression
+<parcgwpf:UTagInfo Key="UTagInfo2" UTag="NEK.PI.2-Square/EXPR=IV(&quot;NEK.PI.TagWith&lt;&amp;&gt;&quot;)" Description="2 Square Wave" PlotMax="50" ElementName="PVTextBlock2" ReadSpan="01:00:00" PeriodType="D" />
+
+# Embedded Graphics MDE - Scripted type MDE Tag With Expression
+mp;lt;/ENTRY_TYPE&amp;gt;&amp;lt;CALC_ATTRIBUTE&amp;gt;EXPR=Cell(&amp;quot;NEK.PI.DumbTagName&amp;amp;amp;1&amp;quot;) + Cell(&amp;quot;NEK.PI.Dumb&amp;amp;lt;TagName2&amp;quot;) + Cell(&amp;quot;NEK.PI.DumbTag&amp;amp;gt;Name3&amp;quot;) + Cell(&amp;quot;NEK.PI.DumbTag&amp;quot;&amp;quot;Name4&amp;quot;)&amp;lt;/CALC_ATTRIBUTE&amp;
+
+# Embedded MDE - Formula with tags in arguments
+COLUMN&amp;gt;&amp;lt;UTAG&amp;gt;Plantname.MDE.PIReplaceTest2&amp;lt;/UTAG&amp;gt;&amp;lt;COLUMN_TYPE&amp;gt;2&amp;lt;/COLUMN_TYPE&amp;gt;&amp;lt;ENTRY_TYPE&amp;gt;0&amp;lt;/ENTRY_TYPE&amp;gt;&amp;lt;CALC_ATTRIBUTE&amp;gt;CALC=CV_TEST(&amp;quot;NEK.PI.SomeDumb&amp;amp;amp;Tag1&amp;quot;, &amp;quot;NEK.PI.SomeDumb&amp;amp;lt;Tag2&amp;quot;, &amp;quot;NEK.PI.SomeDumb&amp;amp;amp;Tag3&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;)&amp;lt;/CALC_ATTRIBUTE&amp;gt;&amp;lt;ALLOW_CALC_OVERRIDE&amp;gt;False&amp;lt;/ALLOW_CALC_OVERRIDE&amp;gt;&amp;lt;AGGREGATE&amp;gt;4&amp;lt;/AGGREGATE&amp;gt;&amp;lt;CAPTION
